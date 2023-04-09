@@ -19,7 +19,7 @@ class NavFixWeb extends NavFixPlatform {
 
   /// Returns a [String] containing the version of the platform.
   @override
-  void pop() async {
+  void pop() {
     window.history.back();
   }
 }
