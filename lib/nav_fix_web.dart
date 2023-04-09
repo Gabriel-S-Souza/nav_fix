@@ -8,16 +8,13 @@ import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 import 'nav_fix_platform_interface.dart';
 
-/// A web implementation of the NavFixPlatform of the NavFix plugin.
 class NavFixWeb extends NavFixPlatform {
-  /// Constructs a NavFixWeb
   NavFixWeb();
 
   static void registerWith(Registrar registrar) {
     NavFixPlatform.instance = NavFixWeb();
   }
 
-  /// Returns a [String] containing the version of the platform.
   @override
   void pop() {
     window.history.back();
