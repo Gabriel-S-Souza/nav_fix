@@ -19,4 +19,9 @@ class NavFixWeb extends NavFixPlatform {
   void pop() {
     window.history.back();
   }
+
+  @override
+  void updateUrl(String url) {
+    window.history.pushState(null, '', url);
+  }
 }

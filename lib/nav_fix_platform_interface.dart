@@ -17,4 +17,6 @@ abstract class NavFixPlatform extends PlatformInterface {
   }
 
   void pop();
+
+  void updateUrl(String url);
 }

@@ -9,4 +9,7 @@ class MethodChannelNavFix extends NavFixPlatform {
 
   @override
   Future<void> pop() async {}
+
+  @override
+  void updateUrl(String url) {}
 }
